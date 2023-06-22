@@ -1,0 +1,65 @@
+// Reset CSS
+@import "reset.scss";
+
+
+
+.wrapper {
+	width: 100%;
+	padding: 50px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+.character {
+	position: relative;
+
+	width: 520px;
+	height: 1050px;
+
+	&__hair,
+	&__face,
+	&__gloves,
+	&__shorts,
+	&__body {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+	}
+
+	&__hair {
+		z-index: 5;
+	}
+	&__face {
+		z-index: 4;
+	}
+	&__gloves {
+		z-index: 3;
+	}
+	&__shorts {
+		z-index: 2;
+	}
+	&__body {
+		z-index: 1;
+	}
+}
+
+
+
+.generate-btn {
+	width: 200px;
+	height: 50px;
+
+	font-size: 20px;
+	font-family: Arial;
+	font-weight: 700;
+
+	background: transparent;
+	border: 3px solid #000;
+	border-radius: 15px 0 15px 0;
+}
